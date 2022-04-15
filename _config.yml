@@ -1,1 +1,4 @@
 theme: jekyll-theme-midnight
+echo '' >> _config.yml
+echo 'title: Polynamic' >> _config.yml
+echo 'description: Polynamic' >> _config.yml
