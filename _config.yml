@@ -1,3 +1,1 @@
 theme: jekyll-theme-slate
-echo 'title: Polynamic' >> _config.yml
-echo 'description: Polynamic' >> _config.yml
