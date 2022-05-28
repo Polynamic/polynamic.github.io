@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+.navbar {
+    background-color: rgb(8, 8, 8);
+    overflow: hidden;
+}
+
+.navbar .brand {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .navbarRed:hover {
+    color: rgb(255, 35, 35);
+}
+
+.navbar .navbarPurple:hover {
+    color: rgb(207, 53, 255);
+}
+
+.navbar .navbarBlue:hover {
+    color: rgb(0, 148, 255);
+}
+
+.navbar .brand:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dropdownRed {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdownPurple {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdownBlue {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdownRed .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdownPurple .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdownBlue .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdownRed:hover .dropbtn {
+    color: rgb(255, 35, 35);
+    text-decoration: none;
+
+}
+
+.navbar a:hover, .dropdownPurple:hover .dropbtn {
+    color: rgb(207, 53, 255);
+    text-decoration: none;
+
+}
+
+.navbar a:hover, .dropdownBlue:hover .dropbtn {
+    color: rgb(0, 148, 255);
+    text-decoration: none;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-height: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    color: red;
+}
+
+.dropdownRed:hover .dropdown-content {
+    display: block;
+}
+
+.dropdownPurple:hover .dropdown-content {
+    display: block;
+}
+
+.dropdownBlue:hover .dropdown-content {
+    display: block;
+}
+
+.navbar a.active {
+    background-color: rgb(8, 8, 8);
+    color: white;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+img {
+    width: 100px;
+    height: 30px;
+    align-items: center;
+}
