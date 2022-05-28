@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polynamic</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="navbar" href="/html/navbar.html">
+</head>
+<body>
+    <div id="nav-placeholder"><p>placeholder</p></div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $.get("html/objects/navbar.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        })
+    </script>
+    <script>
+        $.get("html/objects/footer.html", function(data){
+            $("#footer-placeholder").replaceWith(data);
+        })
+    </script>
+    
+    <div class="container">
+        <div class="content">
+            <div class="top">
+                <br>
+                <h1>Polynamic</h1><br></br>
+                <p>The Polynamic website is currently a Work In Progress.</p>
+            </div>
+            <div class="newBlog">
+                <h1>Blog</h1>
+            </div>
+            <div class="newGames">
+                <h1>Newest Games</h1>
+            </div>
+            
+        </div>
+    </div>
+    <div id="footer-placeholder"><p>placeholder</p></div>
+</body>
+</html>
