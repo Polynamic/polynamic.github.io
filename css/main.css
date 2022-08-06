@@ -380,3 +380,45 @@ html, body {
     display: none;
   }
 }
+
+.navbar-container {
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+}
+
+.navbar-items {
+    width: 100%;
+    margin: 0;
+    padding: 1px 0;
+    display: flex;
+    align-items: center;
+}
+  
+.navbar-items ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+  
+.navbar-items ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.navbar-items ul li a:hover {
+    color: rgb(255, 45, 45);
+    transition: 0.5s;
+    
+}
+
+.brand span {
+    color: white;
+    text-decoration: none;
+}
+
+.brand {
+    text-decoration: none;
+}
