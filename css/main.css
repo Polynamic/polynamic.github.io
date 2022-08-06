@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+
+.light-mode {
+    background-color: rgba(245, 245, 245);
+}
+
+.light-mode .main-container {
+  color: black;
+}
+  
+  div {
+    display: block;
+  }
+  
+  ::selection {
+    background: rgb(255, 45, 45);
+    color: white;
+  }
+
+.main-container {
+  width: 100%;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+  
+  body {
+    background-color: #080708;
+    color: white;
+  }
+
+.navbar-container {
+  background-color: transparent; 
+  position: fixed; 
+  width: 100%; 
+  z-index: 9;
+}
+  
+  .main-container {
+    color: white;
+  }
+  
+  .game-section {
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  
+  .news-section {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  
+  .sticky + .main-container {
+    padding-top: 60px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #505050;
+  }
+  
+  .light .main-container {
+    background-color: white;
+    color: black;
+  }
+  
+  .featured-games-title {
+    width: fit-content;
+    padding-bottom: 20px;
+  }
+  
+  .latest-news-title {
+    padding-bottom: 20px;
+    padding-top: 50px;
+  }
+  
+  .btn {
+    border: 2px solid black;
+    background-color: #fc4b4b;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.2s;
+  }
+  
+  .all-games {
+    border-color: #fc4b4b;
+    color: black;
+  }
+  
+  .all-games-container {
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .all-games:hover {
+    transition: 0.2s;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .latest-news {
+    padding-top: 20px;
+  }
+  
+  .featured-game {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  
+  #featured-game-1, #featured-game-2, #featured-game-3 {
+    margin-right: 30px;
+  }
+  
+  .featured-game-image {
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+  
+  .news-article {
+    width: 331px;
+    background-color: #141314;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 30px;
+    overflow: hidden;
+    text-decoration: none;
+    z-index: 1;
+    transition: 0.2s;
+  }
+
+.news-article:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+  
+  @media screen and (max-width: 1200px) {
+    .news-article {
+      width: 223px;
+    } 
+    .featured-game {
+      margin-left: 40px;
+    }
+    .news-article-info {
+      font-size: 15px;
+    }
+    .news-article-stuff h2 {
+      font-size: 20px;
+    }
+    .news-article-stuff h3 {
+      font-size: 15px;
+    }
+  }
+  
+  .news-article-image {
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    --aspect-ratio: 1/1;
+    width: 100%;
+    height: auto;
+  }
+  
+  .news-article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .news-article-info {
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .news-info-creator {
+    color: #fc4b4b;
+    padding-right: 10px;
+  }
+  
+  .news-info-date {
+    color: #979797;
+  }
+  
+  .news-article-title {
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+  
+  .news-article-title {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .news-article-desc {
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .news-article-desc {
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  
+  #article-1, #article-2, #article-3, #article-4 {
+    margin-right: 30px;
+  }
+
+  .featured-game {
+    width: 331px;
+    background-color: transparent;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 30px;
+    overflow: hidden;
+    text-decoration: none;
+    z-index: 1;
+    transition: 0.2s;
+  }
+
+.featured-game:hover {
+  transition: 0.2s;
+  transform: scale(1.05);
+}
+  
+  @media screen and (max-width: 1200px) {
+    .featured-game {
+      width: 223px;
+    } 
+    .featured-game {
+      margin-left: 40px;
+    }
+    .featured-games-info {
+      font-size: 15px;
+    }
+    .featured-games-stuff h2 {
+      font-size: 20px;
+    }
+    .featured-games-stuff h3 {
+      font-size: 15px;
+    }
+  }
+  
+  .featured-game-image {
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    --aspect-ratio: 1/1;
+    width: 100%;
+    height: auto;
+  }
+  
+  .featured-game-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .featured-games-info {
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .featured-game-title {
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+  
+  .featured-game-title {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .featured-game-desc {
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .featured-game-desc {
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  
+  #featured-game-1, #featured-game-2, #featured-game-3, #featured-game-4 {
+    margin-right: 30px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer a:hover {
+    color: rgb(255, 35, 35);
+  }
+  
+  
+  
+  
+  .footer-copyright {
+    margin-top: 10px;
+  }
+  
+  footer {
+    background-color: black;
+    margin-top: 80px;
+    padding-top: 20px;
+  }
+
+.slideshow-section {
+  width: 100%;
+}
+
+.mobile-navbar-container {
+  display: none;
+  background-color: rgba(0,0,0,0.95);
+  position: fixed; 
+  width: 100%; 
+  z-index: 10;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-navbar-container {
+    display: block;
+  }
+  .navbar-container {
+    display: none;
+  }
+}
